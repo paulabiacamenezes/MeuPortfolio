@@ -423,8 +423,13 @@ footer .line-footer p a{
     .topo-do-site h1{
         font-size: 30px;
     }
+    .topo-do-site .img-topo-site{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .topo-do-site .img-topo-site img{
-        width: 100%;
+        width: 65%;
     }
 
     /* ESPECIALIDADES */
@@ -471,9 +476,14 @@ footer .line-footer p a{
     }
     footer .line-footer{
         text-align: center;
+    footer .logo-footer{
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
     footer .logo-footer img{
-        width: 50%;
+        width: 25%;
     }
+
 
 }
