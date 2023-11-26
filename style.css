@@ -147,7 +147,10 @@ header nav.menu-desktop ul li{
 section.topo-do-site{
     padding: 80px 4%;
 }
-
+section.topo-so-site .flex{
+    align-items: center;
+    justify-content: center;
+}
 .topo-do-site h1{
     color:#fff;
     line-height: 40px;
