@@ -515,7 +515,7 @@ footer .line-footer p a{
     .txt-animado span::after{
         content: "";
         position: absolute;
-        height: 20%;
+        height: 30%;
         border-left: 2px solid #31AFB4;
         right: -10px;
         animation: cursor .7s infinite, digita 25s steps(40) infinite;
