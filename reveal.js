@@ -47,15 +47,13 @@ revelar.reveal('.efeito-img-sobre',{
     //duração do efeito
     duration: 2000,
     distance: '90px',
-    delay: 400,
-    origin: 'left'
+    delay: 400
 })
 revelar.reveal('.efeito-txt-sobre',{
     //duração do efeito
     duration: 2000,
     distance: '90px',
-    delay: 400,
-    origin: 'rigth'
+    delay: 400
 })
 
 //PORTFOLIO
