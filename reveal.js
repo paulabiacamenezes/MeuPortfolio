@@ -11,13 +11,13 @@ revelar.reveal('.efeito-img-topo',{
     //duração do efeito
     duration: 3000,
     distance: '90px',
-    delay: 500
+    delay: 200
 })
 
 //TITULOS DAS SESSÕES
 revelar.reveal('.titulo',{
     //duração do efeito
-    duration: 2000,
+    duration: 1500,
     distance: '90px'
 })
 
@@ -26,20 +26,20 @@ revelar.reveal('.efeito-especialidades1',{
     //duração do efeito
     duration: 1000,
     distance: '90px',
-    delay: 500
+    delay: 400
 })
 
 revelar.reveal('.efeito-especialidades2',{
     //duração do efeito
     duration: 1000,
     distance: '90px',
-    delay: 1000
+    delay: 600
 })
 revelar.reveal('.efeito-especialidades3',{
     //duração do efeito
     duration: 1000,
     distance: '90px',
-    delay: 1500
+    delay: 800
 })
 
 //SESCTION SOBRE
@@ -47,14 +47,14 @@ revelar.reveal('.efeito-img-sobre',{
     //duração do efeito
     duration: 2000,
     distance: '90px',
-    delay: 500,
+    delay: 400,
     origin: 'left'
 })
 revelar.reveal('.efeito-txt-sobre',{
     //duração do efeito
     duration: 2000,
     distance: '90px',
-    delay: 500,
+    delay: 400,
     origin: 'rigth'
 })
 
@@ -63,51 +63,18 @@ revelar.reveal('.efeito-projeto1',{
     //duração do efeito
     duration: 1000,
     distance: '50px',
-    delay: 500
+    delay: 400
 })
 
 revelar.reveal('.efeito-projeto2',{
     //duração do efeito
     duration: 1000,
     distance: '50px',
-    delay: 1000
+    delay: 600
 })
 revelar.reveal('.efeito-projeto3',{
     //duração do efeito
     duration: 1000,
     distance: '50px',
-    delay: 1500
-})
-
-//FORMULÁRIO
-revelar.reveal('.input1',{
-    //duração do efeito
-    duration: 1000,
-    distance: '50px',
-    delay: 500
-})
-
-revelar.reveal('.input2',{
-    //duração do efeito
-    duration: 1000,
-    distance: '50px',
-    delay: 900
-})
-revelar.reveal('.input3',{
-    //duração do efeito
-    duration: 1000,
-    distance: '50px',
-    delay: 1200
-})
-revelar.reveal('.input4',{
-    //duração do efeito
-    duration: 1000,
-    distance: '50px',
-    delay: 1500
-})
-revelar.reveal('.efeito-btn-enviar',{
-    //duração do efeito
-    duration: 1000,
-    distance: '50px',
-    delay: 1900
+    delay: 800
 })
