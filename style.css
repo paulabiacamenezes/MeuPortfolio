@@ -53,10 +53,52 @@ button:hover{
     box-shadow:2px 2px 2px 1px rgba(1, 236, 249, 0.222);    
     transform: scale(1.02);
 }
+/*MODO DARK LIGHT*/
+.trilho{
+    width: 100px;
+    height: 50px;
+    background-color: #4d4d4d;
+    border-radius: 150px;
+    box-shadow: 0px 5px 1px 2px rgb(0,0,0,0.45) inset;
+    position: relative;
+    cursor: pointer;
+}
+.trilho .indicador:hover{
+    background-color: grey;
+}
+.trilho .indicador{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.655);
+    border-radius: 50%;
+    transform: scale(.7);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark .indicador{
+    left: 50px;
+    background-color: #fff;
+}
+.trilho.dark .indicador:hover{
+    background-color: grey;
+}
+.trilho.dark{
+    background-color: #c3c3c3;
+}
+
+body.dark{
+    background-color: #e4e4e4;
+}
+
+body.dark h1{
+    color: #000;
+}
 
 /* MENU MOBILE */
 .menu-mobile.abrir{
-    width: 70%;
+    width: 85%;
     height: 100%;
 }
 /* .menu-mobile.abrir ~ .overlay-menu{
@@ -138,7 +180,9 @@ header a:hover{
 header nav ul{
     list-style-type: none;
 }
-
+header .logo img{
+    width: 150px;
+}
 header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
@@ -160,19 +204,16 @@ section.topo-so-site .flex{
 .topo-do-site .txt-topo-site{
     margin-top: 10%;
 }
-.topo-do-site .txt-topo-site h1 span{
-    color: #31AFB4;
-    font-size: 60px; 
-}
 
 .topo-do-site .txt-topo-site p{
     color: #fff;
     margin: 40px 0px; 
+    font-size: 25px;
 }
 
 .topo-do-site .img-topo-site img{
     position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
+    animation: flutuar 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes flutuar {
@@ -180,10 +221,62 @@ section.topo-so-site .flex{
         top: 0;
     }
     100%{
-        top: 20px;
+        top: 40px;
     }
 }
 
+.txt-animado{
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.txt-animado span{
+    position: relative;
+}
+.txt-animado h1{
+    color:#fff;
+    line-height: 40px;
+    font-size: 42px;
+}
+/*peseudo elemento criado diretamente no css, criadno um elemento dinãmico antes da tag span */
+.txt-animado span::before{
+    /*conteudo vazio*/
+    content: "";
+    color: #31AFB4;
+    animation: palavras 20s infinite;
+}
+
+.txt-animado span::after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    border-left: 2px solid #31AFB4;
+    right: -10px;
+    animation: cursor .7s infinite, digita 25s steps(40) infinite;
+    width: calc(100% + 350px);
+    background-color: #121212;
+}
+
+@keyframes digita{
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 350px);
+    }
+}
+
+@keyframes cursor{
+    0%{
+        border-left: 2px solid #121212; 
+    }
+}
+
+@keyframes palavras{
+    0%, 100%{
+        content: "PONTES DIGITAIS PARA CONECTAR O MUNDO .";
+    }
+}
 /* estilos das especialidades */
 
 section.especialidades{
@@ -325,7 +418,7 @@ section.especialidades .bi-incognito,.bi-people-fill{
     transition: 0.5s;
 }
 section.especialidades .bi-incognito:hover, section.especialidades .bi-people-fill:hover{
-    color: #00fffb;
+    color: #602FBF;
     transform: scale(1.05);
 }
 
@@ -339,7 +432,9 @@ footer{
 footer .flex{
     justify-content: space-between; /*só funciona com a propriedade flex*/
 }
-
+footer img{
+    width: 150px;
+}
 footer .line-footer{
     padding: 20px 0;
 
@@ -359,7 +454,7 @@ footer .line-footer p a{
     margin: 1%;
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1200px){
     /* CLASSE GERAL */
     .flex{
         flex-direction: column;
@@ -395,6 +490,58 @@ footer .line-footer p a{
     }
     .topo-do-site .img-topo-site img{
         width: 65%;
+    }
+    .txt-animado{
+    font-size: 45px;
+    font-weight: 300;
+    }
+
+    .txt-animado span{
+        position: relative;
+    }
+    .txt-animado h1{
+        color:#fff;
+        line-height: 40px;
+        font-size: 42px;
+    }
+    /*peseudo elemento criado diretamente no css, criadno um elemento dinãmico antes da tag span */
+    .txt-animado span::before{
+        /*conteudo vazio*/
+        content: "";
+        color: #31AFB4;
+        animation: palavras 20s infinite;
+    }
+
+    .txt-animado span::after{
+        content: "";
+        position: absolute;
+        height: 20%;
+        border-left: 2px solid #31AFB4;
+        right: -10px;
+        animation: cursor .7s infinite, digita 25s steps(40) infinite;
+        width: calc(100% + 350px);
+        background-color: #121212;
+    }
+
+    @keyframes digita{
+        10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+            width: 0;
+        }
+        5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+            width: calc(100% + 350px);
+        }
+    }
+
+    @keyframes cursor{
+        0%{
+            border-left: 2px solid #121212; 
+        }
+    }
+
+    @keyframes palavras{
+        0%, 100%{
+            content: "PONTES DIGITAIS PARA CONECTAR O MUNDO.";
+        }
     }
 
     /* ESPECIALIDADES */
