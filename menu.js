@@ -5,7 +5,8 @@ let trilho = document.getElementById('trilho')
         let body = document.querySelector('body')
 
         trilho.addEventListener('click', ()=>{
-           alert("Essa função está em manutenção no momento :)")
+            trilho.classList.toggle('dark')
+    		body.classList.toggle('dark')
         })
 
 btnMenu.addEventListener('click', ()=>{

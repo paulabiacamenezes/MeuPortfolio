@@ -56,6 +56,44 @@ revelar.reveal('.efeito-txt-sobre',{
     delay: 400
 })
 
+//MINHAS LINGUAGNES
+revelar.reveal('.linguagem-js',{
+    duration: 1500,
+    distance: '50px',
+    delay: 300,
+    origin: 'left'
+})
+revelar.reveal('.linguagem-php',{
+    duration: 1500,
+    distance: '50px',
+    delay: 300,
+    origin: 'right'
+})
+revelar.reveal('.linguagem-sql',{
+    duration: 1500,
+    distance: '50px',
+    delay: 400,
+    origin: 'left'
+})
+revelar.reveal('.linguagem-git',{
+    duration: 1500,
+    distance: '50px',
+    delay: 400,
+    origin: 'right'
+})
+revelar.reveal('.linguagem-github',{
+    duration: 1500,
+    distance: '50px',
+    delay: 500,
+    origin: 'left'
+})
+revelar.reveal('.linguagem-bootstrap',{
+    duration: 1500,
+    distance: '50px',
+    delay: 500,
+    origin: 'right'
+})
+
 //PORTFOLIO
 revelar.reveal('.efeito-projeto1',{
     //duração do efeito
@@ -75,4 +113,9 @@ revelar.reveal('.efeito-projeto3',{
     duration: 1000,
     distance: '50px',
     delay: 800
+})
+revelar.reveal('.btn-github',{
+    duration: 1000,
+    distance: '30px',
+    delay: 600
 })
