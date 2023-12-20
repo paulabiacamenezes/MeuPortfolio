@@ -243,6 +243,9 @@ body.dark .img-sobre .foto2{
 }
 
 /*FOOTER*/
+body.dark footer{
+    box-shadow: 0 0 40px 10px #0000001a
+}
 body.dark footer .logo-footer .fotorodape1{
     opacity: 0;
     position: absolute;
@@ -265,8 +268,11 @@ body.dark footer .line-footer p a{
 }
 
 /*ESPECIALIDADES E SITES HOSPEDADOS*/
-body.dark section.especialidades{
+body.dark section.sobre{
     box-shadow: 0 0 40px 10px #0000001a;
+}
+body.dark section.portifolio{
+    box-shadow: 0 0 40px 10px #0000001a
 }
 body.dark section.especialidades .btn-contato i{
     color: #fff;
@@ -761,6 +767,9 @@ footer .line-footer p a{
     }
     .topo-do-site .img-topo-site img{
         width: 65%;
+    }
+    body.dark section.topo-do-site{
+        margin-bottom: 15%;
     }
     body.dark .img-topo-site .fototopo2{
         width: 100%;    
