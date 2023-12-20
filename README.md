@@ -1,4 +1,4 @@
-# Hello, wlcome to my portfolio!
+# Hello, welcome to my portfolio!
 
 ![ezgif com-video-to-gif-converted](https://github.com/paulabiancamenezes/MeuPortfolio/assets/110268550/b6745e50-2103-40b4-944f-1daa890d6425)
 
