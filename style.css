@@ -131,7 +131,7 @@ button:hover{
     background-color: #DBDBDB;
 }
 .trilho.dark{
-    background-color: #298E92;
+    background-color: #3600a1;
 }
 .trilho.dark .bi-sun-fill{
     opacity: 0;
@@ -168,17 +168,34 @@ body.dark section.sobre span{
 body.dark header{
     transition: .10s;
     border-radius: 0 0 15px 15px;
-    background-color: #31afb4;
+    background-color: #5e17eb;
     box-shadow: 1px 5px 10px -2px rgba(0, 0, 0, 0.25);
 }
 body.dark header a{
     color: #fff;
 }
+body.dark .logo1{
+    opacity: 0;
+    position: absolute;
+}
+body.dark .logo2{
+    visibility: visible;
+    opacity: 2;
+    position: relative;
+    
+}
+body.dark .menu-mobile{
+    background-color: #fcfcfc;
+}
 body.dark .btn-abrir-menu{
     color: #fff;
 }
 body.dark .menu-mobile .btn-fechar i{
-    color: #fff;
+    color: #5e17eb;
+}
+body.dark .menu-mobile nav ul li a{
+    color:#5e17eb;
+    font-weight: 300;
 }
 body.dark button:hover{ 
     background-color: #6926ed;
@@ -187,17 +204,31 @@ body.dark button:hover{
 body.dark .txt-animado span::after{
     background-color: #fff;
     border-left: 2px solid #5e17eb;
+    transition: .5s;    
 }
 body.dark .txt-animado span::before{
     /*conteudo vazio*/
     content: "";
     color: #5e17eb;
     animation: palavras 20s infinite;
+    transition: .5s;
 }
 body.dark .topo-do-site p{
     color: #000;
 }
-
+body.dark .img-topo-site .fototopo1{
+    opacity: 0;
+    position: relative;
+}
+body.dark .img-topo-site .fototopo2{
+    opacity: 1;
+    position: absolute;
+    visibility: visible;
+}
+body.dark section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+}
 /*SOBRE*/
 body.dark .img-sobre .foto1{
     opacity: 0;
@@ -207,6 +238,8 @@ body.dark .img-sobre .foto2{
     opacity: 1;
     visibility: visible;
     position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 /*FOOTER*/
@@ -361,6 +394,11 @@ header nav ul{
 header .logo img{
     width: 150px;
 }
+header .logo2{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
 header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
@@ -388,6 +426,12 @@ section.topo-so-site .flex{
     color: #fff;
     margin: 40px 0px; 
     font-size: 25px;
+}
+.img-topo-site .fototopo2{
+    position: absolute;
+    opacity: 0;
+    visibility:hidden;
+    animation: flutuar 1.5s ease-in-out infinite alternate;
 }
 
 .topo-do-site .img-topo-site img{
@@ -420,6 +464,7 @@ section.topo-so-site .flex{
 /*peseudo elemento criado diretamente no css, criadno um elemento dinãmico antes da tag span */
 .txt-animado span::before{
     /*conteudo vazio*/
+    transition: .5s;
     content: "";
     color: #31AFB4;
     animation: palavras 20s infinite;
@@ -433,6 +478,7 @@ section.topo-so-site .flex{
     right: -10px;
     animation: cursor .7s infinite, digita 25s steps(35) infinite;
     width: calc(100% + 330px);
+    transition: .5s;
     background-color: #121212;
 }
 
@@ -687,10 +733,12 @@ footer .line-footer p a{
     }
 
     /* cabeçalho */
-    .menu-desktop, .btn-contato{
+    .menu-desktop{
         display: none;
     }
-
+    .topo-do-site .btn-contato{
+        display: none;
+    }
     /* topo do site */
     section.topo-do-site .flex{
         gap: 5px;
@@ -700,18 +748,22 @@ footer .line-footer p a{
     }
     section.topo-do-site{
         padding: 20px 4%;
+        margin-bottom: 10%;
     
     }
     .topo-do-site h1{
         font-size: 30px;
     }
-    .topo-do-site .img-topo-site{
+    .topo-do-site .img-topo-site, .img-topo-site .fototopo2{
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .topo-do-site .img-topo-site img{
         width: 65%;
+    }
+    body.dark .img-topo-site .fototopo2{
+        width: 100%;    
     }
     /* ANIMAÇÃO DE DIGITAÇÃO */
     .txt-animado h1{
@@ -723,7 +775,8 @@ footer .line-footer p a{
         content: "";
         color: #31AFB4;
         animation: palavras 20s infinite;
-    }
+       transition: .5s;
+ }
 
     .txt-animado span::after{
         content: "";
@@ -734,7 +787,8 @@ footer .line-footer p a{
         animation: cursor .7s infinite, digita 25s steps(35) infinite;
         width: calc(100% + 10px);
         background-color: #121212;
-    }
+        transition: .5s;
+}
 
     @keyframes digita{
         10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
@@ -767,6 +821,7 @@ footer .line-footer p a{
             content: "";
             color: #31AFB4;
             animation: palavras 20s infinite;
+            transition: .5s;
         }
     
         .txt-animado span::after{
@@ -778,6 +833,7 @@ footer .line-footer p a{
             animation: cursor .7s infinite, digita 25s steps(35) infinite;
             width: calc(100% + 355px);
             background-color: #121212;
+            transition: .5s;
         }
     
         @keyframes digita{
@@ -838,6 +894,7 @@ footer .line-footer p a{
             content: "";
             color: #31AFB4;
             animation: palavras 20s infinite;
+            transition: .5s;
         }
     
         .txt-animado span::after{
@@ -849,7 +906,8 @@ footer .line-footer p a{
             animation: cursor .7s infinite, digita 25s steps(35) infinite;
             width: 350px;
             background-color: #121212;
-        }
+            transition: .5s;
+}
     
         @keyframes digita{
             10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
