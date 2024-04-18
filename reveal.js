@@ -41,6 +41,12 @@ revelar.reveal('.efeito-especialidades3',{
     distance: '90px',
     delay: 800
 })
+revelar.reveal('.efeito-especialidades4',{
+    //duração do efeito
+    duration: 1000,
+    distance: '90px',
+    delay: 1000
+})
 
 //SESCTION SOBRE
 revelar.reveal('.efeito-img-sobre',{
