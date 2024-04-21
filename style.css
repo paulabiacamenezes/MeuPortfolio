@@ -352,7 +352,7 @@ header{
     z-index: 99999;
     position: fixed;
     transition: .5s;
-    padding: 0px 12%;
+    padding: 0px 8%;
 }
 
 /* Procura diretamente a classe interface */
@@ -367,6 +367,7 @@ header a{
     color: #c2c2c2;
     text-decoration: none;
     transition: .2s;
+    font-weight: 200;
 }
 
 header a:hover{
@@ -387,12 +388,12 @@ header .logo2{
 }
 header nav.menu-desktop ul li{
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site{
-    padding: 180px 4%;
+    padding: 100px 4%;
 }
 section.topo-so-site .flex{
     align-items: center;
@@ -581,7 +582,7 @@ section.img-sobre{
 
 /*ESTILO LINGUAGENS*/
 section.linguagens{
-    padding: 100px 4%;
+    padding: 150px 4%;
 }
 section.linguagens > .interface{
     padding: 0 15%
@@ -611,7 +612,7 @@ section.linguagens h3{
 /* ESTILO PORTIFOLIO */
 
 section.portifolio{
-    padding: 120px 4%;
+    padding: 150px 4%;
     box-shadow: 0 0 40px 10px #ffffff1a;
 }
 
@@ -704,7 +705,7 @@ footer .line-footer p a{
     margin: 1%;
 }
 
-@media screen and (max-width: 1609px){
+@media screen and (max-width: 1090px){
     /* CLASSE GERAL */
     .flex{
         flex-direction: column;
