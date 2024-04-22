@@ -454,7 +454,7 @@ section.topo-so-site .flex{
     position: absolute;
     height: 80%;
     border-left: 2px solid #fff;
-    right: -13px;
+    right: -20px;
     animation: cursor .7s infinite, digita 25s steps(25) infinite;
     width: calc(100% + 15px);
     transition: .5s;
