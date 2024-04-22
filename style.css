@@ -430,20 +430,17 @@ section.topo-so-site .flex{
     }
 }
 
-.txt-animado{
-    font-size: 45px;
-}
-
 .txt-animado span{
     position: relative;
     font-weight: 300;
+    font-size: 35px;
 }
 .txt-animado h1{
     color:#fff;
     line-height: 40px;
     font-size: 42px;
+    font-weight: 600;
 }
-/*pseudo elemento criado diretamente no css, criadno um elemento dinãmico antes da tag span */
 .txt-animado span::before{
     /*conteudo vazio*/
     transition: .5s;
@@ -455,11 +452,11 @@ section.topo-so-site .flex{
 .txt-animado span::after{
     content: "";
     position: absolute;
-    height: 40%;
+    height: 80%;
     border-left: 2px solid #fff;
-    right: -10px;
-    animation: cursor .7s infinite, digita 25s steps(35) infinite;
-    width: calc(100% + 330px);
+    right: -13px;
+    animation: cursor .7s infinite, digita 25s steps(25) infinite;
+    width: calc(100% + 15px);
     transition: .5s;
     background-color: #232323;
 }
@@ -469,7 +466,7 @@ section.topo-so-site .flex{
         width: 0;
     }
     5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-        width: calc(100% + 330px);
+        width: calc(100% + 21px);
     }
 }
 
@@ -480,9 +477,18 @@ section.topo-so-site .flex{
 }
 
 @keyframes palavras{
-    0%, 100%{
-        content: "PONTES DIGITAIS PARA CONECTAR O MUNDO .";
-    }
+    0%,25%{
+		content: "Desenvolvedora";
+	}
+	26%,50%{
+		content: "Freelancer";
+	}
+	51%,75%{
+		content: "Prof de Robótica";
+	}
+	76%,100%{
+		content: "Universitária em TI";
+	}
 }
 /* estilos das especialidades */
 
@@ -755,95 +761,13 @@ footer .line-footer p a{
     .txt-animado h1{
         font-size: 35px;
     }
-    /*peseudo elemento criado diretamente no css, criadno um elemento dinãmico antes da tag span */
-    .txt-animado span::before{
-        /*conteudo vazio*/
-        content: "";
-        color: #6926ed;
-        animation: palavras 20s infinite;
-       transition: .5s;
+    .txt-animado span{
+        font-size: 27px;
     }
-
     .txt-animado span::after{
-        content: "";
-        position: absolute;
-        height: 80%;
-        border-left: 2px solid #fff;
-        right: -10px;
-        animation: cursor .7s infinite, digita 25s steps(35) infinite;
-        width: calc(100% + 10px);
-        background-color: #232323;
-        transition: .5s;
+        height: 100%;
     }
-
-    @keyframes digita{
-        10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-            width: 0;
-        }
-        5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-            width: calc(100% + 10px);
-        }
-    }
-
-    @keyframes cursor{
-        0%{
-            border-left: 2px solid #232323; 
-        }
-    }
-
-    @keyframes palavras{
-        0%, 100%{
-            content: "PONTES DIGITAIS PARA CONECTAR O MUNDO.";
-        }
-    }
-    @media screen and (max-width: 1150px){
-        .txt-animado h1{
-            font-size: 45px;
-            
-        }
-        /*peseudo elemento criado diretamente no css, criadno um elemento dinãmico antes da tag span */
-        .txt-animado span::before{
-            /*conteudo vazio*/
-            content: "";
-            color: #6926ed;
-            animation: palavras 20s infinite;
-            transition: .5s;
-        }
     
-        .txt-animado span::after{
-            content: "";
-            position: absolute;
-            height: 50%;
-            border-left: 2px solid #fff;
-            right: -10px;
-            animation: cursor .7s infinite, digita 25s steps(35) infinite;
-            width: calc(100% + 355px);
-            background-color: #232323;
-            transition: .5s;
-        }
-    
-        @keyframes digita{
-            10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-                width: 0;
-            }
-            5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-                width: calc(100% + 355px);
-            }
-        }
-    
-        @keyframes cursor{
-            0%{
-                border-left: 2px solid #232323; 
-            }
-        }
-    
-        @keyframes palavras{
-            0%, 100%{
-                content: "PONTES DIGITAIS PARA CONECTAR O MUNDO.";
-            }
-        }
-
-    }
     @media screen and (max-width: 750px){
         /*ESTILO LINGUAGENS*/
         section.linguagens > .interface{
@@ -868,144 +792,13 @@ footer .line-footer p a{
         }
         section.linguagens h3{
         font-size: 20px;
-        }
+        }  
         .txt-animado h1{
-            font-size: 45px;
-            
+            font-size: 30px;
         }
-        /*peseudo elemento criado diretamente no css, criadno um elemento dinãmico antes da tag span */
-        .txt-animado span::before{
-            /*conteudo vazio*/
-            content: "";
-            color: #6926ed;
-            animation: palavras 20s infinite;
-            transition: .5s;
-        }
-    
-        .txt-animado span::after{
-            content: "";
-            position: absolute;
-            height: 30%;
-            border-left: 2px solid #fff;
-            right: -10px;
-            animation: cursor .7s infinite, digita 25s steps(35) infinite;
-            width: 350px;
-            background-color: #232323;
-            transition: .5s;
-}
-    
-        @keyframes digita{
-            10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-                width: 0;
-            }
-            5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-                width: 350px;
-            }
-        }
-    
-        @keyframes cursor{
-            0%{
-                border-left: 2px solid #232323; 
-            }
-        }
-    
-        @keyframes palavras{
-            0%, 100%{
-                content: "PONTES DIGITAIS PARA CONECTAR O MUNDO.";
-            }
-        }
-
-    }
-    @media screen and (max-width: 639px){
-        .txt-animado h1{
-            font-size: 45px;
-            
-        }
-        /*peseudo elemento criado diretamente no css, criadno um elemento dinãmico antes da tag span */
-        .txt-animado span::before{
-            /*conteudo vazio*/
-            content: "";
-            color: #6926ed;
-            animation: palavras 20s infinite;
-        }
-    
-        .txt-animado span::after{
-            content: "";
-            position: absolute;
-            height: 30%;
-            border-left: 2px solid #fff;
-            right: -10px;
-            animation: cursor .7s infinite, digita 25s steps(35) infinite;
-            width: 350px;
-            background-color: #232323;
-        }
-    
-        @keyframes digita{
-            10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-                width: 0;
-            }
-            5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-                width: 350px;
-            }
-        }
-    
-        @keyframes cursor{
-            0%{
-                border-left: 2px solid #232323; 
-            }
-        }
-    
-        @keyframes palavras{
-            0%, 100%{
-                content: "PONTES DIGITAIS PARA CONECTAR O MUNDO.";
-            }
-        }
-
-    }@media screen and (max-width: 557px){
-        .txt-animado h1{
-            font-size: 45px;
-            
-        }
-        /*peseudo elemento criado diretamente no css, criadno um elemento dinãmico antes da tag span */
-        .txt-animado span::before{
-            /*conteudo vazio*/
-            content: "";
-            color: #6926ed;
-            animation: palavras 20s infinite;
-        }
-    
-        .txt-animado span::after{
-            content: "";
-            position: absolute;
-            height: 35%;
-            border-left: 2px solid #fff;
-            right: -10px;
-            animation: cursor .7s infinite, digita 25s steps(35) infinite;
-            width: 224px;
-            background-color: #232323;
-        }
-    
-        @keyframes digita{
-            10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-                width: 0;
-            }
-            5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-                width: 224px;
-            }
-        }
-    
-        @keyframes cursor{
-            0%{
-                border-left: 2px solid #232323; 
-            }
-        }
-    
-        @keyframes palavras{
-            0%, 100%{
-                content: "PONTES DIGITAIS PARA CONECTAR O MUNDO.";
-            }
-        }
-
+        .txt-animado span{
+            font-size: 25px;
+        }   
     }
     /* ESPECIALIDADES */
     section.especialidades{
